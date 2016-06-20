@@ -12,7 +12,7 @@ function setup() {
       fill(0);
       rect(x-1, y-1, 3, 3);
       stroke(0, 50);
-      line(x, y, width/2, height/2);
+      line(x, y, width/6, height/2);
     }
   }
 
