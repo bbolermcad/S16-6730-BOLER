@@ -1,5 +1,5 @@
 var y;
-var num = 14;
+var num = 12;
 
 function setup() {
 
