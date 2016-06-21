@@ -1,7 +1,7 @@
 function setup() {
 
   createCanvas(720, 360);
-  background(222);
+  background('rgba(100%,0%,100%,0.5)');
   noStroke();
 
   var gridSize = 35;
