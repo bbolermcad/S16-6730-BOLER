@@ -4,7 +4,7 @@ var num = 14;
 function setup() {
 
   createCanvas(720, 360);
-  background(102);
+  background(59,89,152);
   noStroke();
 
   // Draw white bars
@@ -12,7 +12,7 @@ function setup() {
   y = 60;
   for(var i = 0; i < num/2; i++) {
     rect(50, y, 475, 10);
-    y+=20;
+    y+=40;
   }
 
   // Gray bars
