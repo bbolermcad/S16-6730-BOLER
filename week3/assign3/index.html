@@ -3,10 +3,16 @@
   <head>
     <script src="p5.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(".fadeout").click(function () {
+      $(this).hide()fadeOut('slow');
+    });
+    </script>
+
   </head>
 
   <body>
-    <h1>Unless.</h1>
+    <h1 class="fadeout">Unless.</h1>
   </body>
 
 </html>
