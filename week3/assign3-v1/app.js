@@ -2,7 +2,7 @@ var canvasWidth = 600
 var canvasHeight = 500
 
 // where I downloaded the Origin of the Species raw text file
-var url = 'darwin.txt'
+var url = '/files/origin.txt'
 
 // where we'll put all the words
 var world = $('#world')
@@ -29,24 +29,26 @@ $.get(url, function(data) {
 
     // highlight the word when I hover over
     span.on('mouseover', function(e) {
-      $(this).css('font-weight', 'bold')
+      $(this).css('background', 'yellow')
     })
 
     span.on('mouseout', function(e) {
-      $(this).css('font-weight', 'normal')
+      $(this).css('background', 'white')
     })
 
     // when you click on a word..
     span.on('click', function(e) {
 
       // make it stand out:
-      $(this).fadeOut('slow')
+      $(this).css('color', 'blue')
+      $(this).css('font-weight', 'bold')
       var target = $(this).attr('data-word')
 
       // find all the other instances of that word
       // and make them stand out
       $('span[data-word=' + target + ']')
-        $(this).fadeOut('slow')
+        .css('color', 'blue')
+        .css('font-weight', 'bold')
 
     })
 
