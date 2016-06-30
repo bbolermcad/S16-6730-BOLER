@@ -7,6 +7,7 @@ function setup() {
   noStroke();
 }
 
-setInterval(fuction(){
-  ellipse(240, 240, 80, 80);}
-}5000)
+setInterval(fuction draw() {
+  ellipse(360,200,200,200);
+  fill(255, 255, 255);
+} 5000)
