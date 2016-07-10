@@ -1,10 +1,9 @@
 var beats, sound1, sound2;
-var shape1, shape2,
 
 function preload() {
   beats = loadSound('beats.wav');
-  sound 1 = loadSound('guitar.wav')
-  sound 2 = loadSound('synth.mp3')
+  sound1 = loadSound('guitar.wav')
+  sound2 = loadSound('synth.mp3')
 }
 
 function setup() {
@@ -13,8 +12,14 @@ function setup() {
   beats.loop();
 }
 
-shape1=function draw () {
+function draw () {
   rectangle(150, 150, 150, 150);
   background(14, 189, 189);
+  mouseClicked(function(){
+    if (sound1.isPlaying() ) {
+      sound1.stop();
+    } else {
+      sound1.play()
+    }
+  });
 }
-  
