@@ -1,26 +1,20 @@
-var mysound, amplitude, cnv;
+var beats, sound1, sound2;
+var shape1, shape2,
 
 function preload() {
-  mysound = loadSound('beats.wav');
+  beats = loadSound('beats.wav');
+  sound 1 = loadSound('guitar.wav')
+  sound 2 = loadSound('synth.mp3')
 }
 
 function setup() {
-  cnv = createCanvas (500, 500)
-  amplitude = new p5.Amplitude();
-
-  cnv.mouseClicked(function () {
-    if (mysound.isPlaying() ) {
-      mysound.stop();
-    } else {
-      sound.play();
-    }
-  });
+  createCanvas(500, 500)
+  background (202, 190, 190)
+  beats.loop();
 }
 
-function draw() {
-  background(0);
-  fill(255);
-  var level = amplitude.getlevel()
-  var size = map (level, 0, 1, 0, 200)
-  ellipse (width * 2, height * 2, size, size);
+shape1=function draw () {
+  rectangle(150, 150, 150, 150);
+  background(14, 189, 189);
 }
+  
