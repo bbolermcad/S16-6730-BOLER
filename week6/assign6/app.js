@@ -12,9 +12,7 @@ function draw(){
   fill(14, 181, 215);
   ellipse (x, y, 10, 10);
 
-  y = y + 1;
+  y = y - 1;
+  x = x + random(-1, 1);
 
-  if (y > 500){
-    y = height;
-  }
 }
